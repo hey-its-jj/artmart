@@ -1,0 +1,284 @@
+/*NAVBAR */
+.navbar-brand img {
+	height: 100px!important;
+}
+
+/*MASTHEAD */
+#mastP {
+	margin: 0 auto;
+	width: 400px;
+	text-align: left;
+}
+
+#AMlogo {
+	width: 80%;
+	margin-bottom: 50px;
+}
+
+header.masthead {
+	background-image: url(../assets/img/bannerBack.png);
+	padding-top: 0px;
+}
+
+@media (max-width: 992px) {
+	header.masthead {
+		padding-top: 100px;
+	}
+	#AMlogo {
+		width: 90%;
+	}
+}
+
+/*FEATURES */
+
+.hidden {
+	display: none;
+}
+
+#phoneDiv {
+	text-align: center;
+
+}
+
+.buttonDiv {
+	padding: 15px 0px 15px 0px;
+}
+
+#buttonCol hr {
+	border-top: 2px dashed black;
+	background-color: transparent;
+}
+
+#buttonCol2 {
+	display: none;
+}
+
+.phone {
+	width: 500px;
+}
+
+.outline {
+	border: 2px solid black;
+}
+
+.featBtn {
+	width: 120px;
+	height: 120px;
+	background-color: #EC3A16;
+	border-color: transparent;
+	margin: 10px;
+	font-size: 25px;
+	transition: border 0.1s ease-in;
+	
+} 
+
+.featBtn:hover {
+	border: 6px solid #FF8B73;
+	background-color: #EC3A16;
+}
+
+.featBtn:active {
+	background-color: #EC3A16;
+	border-color: transparent;
+	border: 6px solid #FFB66C;
+	box-shadow: none;
+	transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
+}
+
+.featBtn:hover:active {
+	box-shadow: none;
+	background-color: #FF8000;
+}
+
+.featBtn:focus {
+	background-color: #FF8000;
+	border-color: transparent;
+	border: 6px solid #FFB66C;
+	box-shadow: none;
+}
+
+
+.feature {
+	background: none;
+	border: none;
+	display: block;
+	font-size: 20px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+	#buttonCol {
+		display: none;   	
+	}
+
+	#buttonCol2 {
+		display: flex;   	
+	}
+}
+
+.col-2-align {
+	text-align: center;
+}
+
+/*PROMO VID*/
+
+iframe {
+	padding: 10px;
+	border: 2px dashed darkgray;
+	border-radius: 20px;
+}
+
+#promo {
+	--bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+	border-radius: 20px;
+	max-width: 893px;
+	padding: 20px;
+}
+
+
+/*DOWNLOAD BUTTON */
+
+#dlDiv {
+	position: relative;
+}
+
+#inside-dlDiv {
+	position: absolute;
+	top: -85px;
+	width: 100%;
+	z-index: -1;
+}
+
+#inside-dlDiv img {
+	width: 400px;
+	height: 200px;
+
+}
+
+#dlDiv a {
+	color: black;
+	text-decoration: none;
+	transition: color 0.1s ease-in;
+}
+
+#dlDiv a:hover {
+	color: #E0290C;
+	transition: color 0.1s ease-in;
+}
+
+#dlDiv-link {
+	width: 300px;
+	text-align: center;
+	margin: auto;
+}
+
+
+/*WHY ARTMART */
+.bigBtn {
+	width: 200px;
+	height: 200px;
+	background-color: #FFC220;
+	border-color: transparent;
+	margin: 10px;
+	
+}
+
+.whyIcon {
+	color: #BC610B;
+}
+
+.deetRow {
+	margin-bottom: 50px;
+}
+
+.stack h3 {
+	text-align: center;
+}
+
+/*TESTIMONIALS */
+
+#testim2Small {
+	display: none;
+}
+
+@media screen and (max-width: 992px) {
+	#testim2 {
+		display: none;   	
+	}
+
+	#testim2Small {
+		display: block;   	
+	}
+	.stars {
+		width: 50% !important;
+	}
+}
+
+.stars {
+	width: 80%;
+	margin-bottom: 25px;
+}
+
+
+/*UNIVERSAL */
+
+.make-space {
+	padding-top: 160px;
+}
+.left {
+	text-align: left;
+}
+
+.vertCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.horiCenter {
+	display: flex;
+	justify-content: center;
+}
+
+.heading-div {
+	position: relative;
+}
+
+.heading-div h2 {
+	left: 5px;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+}
+
+.inside-heading-div {
+	position: absolute;
+	top: -30px;
+	left: 10px;
+	width: 100%;
+	z-index: 1;
+}
+
+.inside-heading-div img {
+	width: 400px;
+	height: 100px;
+
+}
+
+.section-subheading {
+	position: absolute;
+	top: 80px;
+	left: 5px;
+	width: 100%;
+}
+
+.bg-light {
+	z-index: -999;
+	/*position: relative;
+	/*z-index only works on positioned elements. That's the only reason I put that there. Otherwise, the yellow paint stroke would be obscured. CRINGE. */
+}
+
+#aboutP {
+	font-size: 1.3rem;
+}

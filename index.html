@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Art Mart</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img id="artLogo" src="assets/img/logos/artlogo.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#features">The Basics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#demo">Why ArtMart?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testim">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <!--<div class="masthead-subheading">Welcome To Our Studio!</div>-->
+                <img id="AMlogo" src="assets/img/bannerFront.png">
+                <div class="masthead-heading text-uppercase">ArtMart is...</div>
+                <div class="masthead-subheading">The Internet's best art supply marketplace!</div>
+                <br>
+                <div id = "mastP">
+                    <p>Shopping for art supplies can be a pain. Sometimes you can't find the right tool for the job, other times they're way too expensive. Let us help you do what you love! ArtMart is an easy-to-use art supply resale app where you can buy and sell used supplies.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Features-->
+        <section class="page-section" id="features">
+            <div class="container">
+                <!--HEADING -->
+                <div class="text-center">
+                    <div class="heading-div" class="text-center">
+                        <h2 class="section-heading text-uppercase">The Basics</h2>
+                        <div class="inside-heading-div">
+                            <img src="assets/img/paintstroke.png">
+                        </div>
+                        <h3 class="section-subheading text-muted">The essential functions of the app.</h3>
+                    </div>
+                </div>
+                <!--END HEADING --> 
+                <div class="make-space"></div>
+                <div class="row justify-content-center vertCenter">
+                    <!--START BUTTON COLUMN-->
+                    <div id="buttonCol" class="col-5 ">
+
+                        <div class="buttonDiv row vertCenter">
+                            <div class="col-xl-4">
+                                <div class="btnAlign"><a class="featBtn btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook" onclick="sortShow();">Sort</a></div>
+                            </div>
+                            <div class="col-8 left">
+                                <p>Organize our catalogue by artistic discipline and tool to make browsing easier. Depending on what you're looking for, you can further filter based on a variety of parameters.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="buttonDiv row vertCenter">
+                            <div class="col-xl-4">
+                                <div class="btnAlign"><a class="featBtn btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook" onclick="buyShow();">Buy</a></div>
+                            </div>
+                            <div class="col-8 left">
+                                <p>Buy from and communicate with trusted sellers. Keep track of your orders from the Home screen.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="buttonDiv row vertCenter">
+                            <div class="col-xl-4">
+                                <div class="btnAlign"><a class="featBtn btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook" onclick="sellShow();">Sell</a></div>
+                            </div>
+                            <div class="col-8 left">
+                                <p>List your supplies for sale and let us take care of the shipping. We won't take too much from your profits, so don't worry about breaking even!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--END BUTTON COLUMN-->
+
+                    <div class="col-xl-3  vertCenter">
+                        <div id="phoneDiv">
+                            <img id="sortPhone" class="phone" src="assets/img/categories.png">
+                            <img id="buyPhone" class="phone hidden" src="assets/img/browse.png">
+                            <img id="sellPhone" class="phone hidden" src="assets/img/buy.png">
+                        </div>
+                    </div>
+
+                </div>
+                <!--HIDDEN BUTTON ROW -->
+                <div id="buttonCol2" class="row justify-content-center vertCenter">
+                    <div class="col-md-4 ">
+                        <div>
+                            <div class="text-center"><a class="featBtn btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook" onclick="sortShow();">Sort</a></div>
+                            <br>
+                            <p>Organize our catalogue by artistic discipline and tool to make browsing easier. Depending on what you're looking for, you can further filter based on a variety of parameters.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div>
+                            <div class="text-center"><a class="featBtn btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook" onclick="buyShow();">Buy</a></div>
+                            <br>
+                            <p>Buy from and communicate with trusted sellers. Keep track of your orders from the Home screen.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div>
+                            <div class="text-center"><a class="featBtn btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook" onclick="sellShow();">Sell</a></div>
+                            <br>
+                            <p>List your supplies for sale and let us take care of the shipping. We won't take too much from your profits, so don't worry about breaking even!</p>
+                        </div>
+                    </div>
+  
+                </div>
+                <!--END HIDDEN BUTTON ROW -->
+            </div>
+            <br>
+            <br>
+            <!--PROMO PLACEHOLDER -->
+            <div class="row justify-content-center">
+                
+                <div id="promo">
+                    <h3 class="text-center">How Does It Work?</h3>
+                    <br>
+                    <div class="row justify-content-center">
+                        <iframe width="893" height="502" src="https://www.youtube.com/embed/vQRk034Rw6Y" title="How Does the ArtMart App Work?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+            </div>
+            <!--END PLACEHOLDER -->
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--DOWNLOAD BUTTON -->
+            <div id="dlDiv" class="text-center">
+                <div id="dlDiv-link">
+                <a href="#!"><h3>Download the App!</h3></a>
+                </div>
+                <div id="inside-dlDiv">
+                    <img src="assets/img/tape.png">
+                </div>
+            </div>
+            <!--END DOWNLOAD BUTTON -->
+
+            <script type="text/javascript">
+                
+                const sort = document.querySelector("#sortPhone");
+                const buy = document.querySelector("#buyPhone");
+                const sell = document.querySelector("#sellPhone");
+
+                function sortShow() {
+
+                    sort.classList.remove("hidden");
+                    buy.classList.add("hidden");
+                    sell.classList.add("hidden");
+
+                }
+
+                function buyShow() {
+
+                    buy.classList.remove("hidden");
+                    sort.classList.add("hidden");
+                    sell.classList.add("hidden");
+
+                }
+
+                function sellShow() {
+
+                    sell.classList.remove("hidden");
+                    sort.classList.add("hidden");
+                    buy.classList.add("hidden");
+
+                }
+
+            </script>
+
+        </section>
+
+        <!-- WHY ARTMART-->
+        <section class="page-section bg-light" id="demo">
+            <div class="container">
+                <!--HEADING -->
+                <div class="text-center">
+                    <div class="heading-div" class="text-center">
+                        <h2 class="section-heading text-uppercase">Why ArtMart?</h2>
+                        <div class="inside-heading-div">
+                            <img src="assets/img/paintstroke.png">
+                        </div>
+                        <h3 class="section-subheading text-muted">Here's what makes us special.</h3>
+                    </div>
+
+                    
+                </div>
+                <!--END HEADING -->
+                <div class="make-space"></div> 
+                <!--START ROW -->
+                <div class="deetRow row justify-content-center">
+                   <div class="stack col-lg-4">
+                        <div class="deetTitle horiCenter"><h3>A VARIED SELECTION</h3></div>
+                        <div class="horiCenter"><div class="bigBtn btn-social"><i class="fa-solid fa-bag-shopping fa-5x whyIcon"></i></div></div>
+                   </div>
+                   <div class="col-lg-6 vertCenter">
+                       <p>Since so much of our marketplace is comprised of shoppers like you all around the world, there'll always be someone who's selling what you need. Products that are long discontinued or hard to come by find a home on ArtMart.</p>
+                   </div>
+                </div>
+                <!--END ROW -->
+                <!--START ROW -->
+                <div class="deetRow row justify-content-center">
+                   <div class="stack col-lg-4">
+                        <div class="deetTitle horiCenter"><h3>WE'RE ON YOUR SIDE</h3></div>
+                        <div class="horiCenter"><div class="bigBtn btn-social"><i class="fa-solid fa-heart fa-5x whyIcon"></i></div></div>
+                   </div>
+                   <div class="col-lg-6 vertCenter">
+                       <p>We'll only take 5% of any sale you close to make using ArtMart worth your while. We also prioritize business with trustworthy vendors so you can feel confident in your purchase.</p>
+                   </div>
+                </div>
+                <!--END ROW -->
+                <!--START ROW -->
+                <div class="row justify-content-center">
+                   <div class="stack col-lg-4">
+                        <div class="deetTitle horiCenter"><h3>WE SHIP ANYWHERE</h3></div>
+                        <div class="horiCenter"><div class="bigBtn btn-social"><i class="fa-solid fa-truck-fast fa-5x whyIcon"></i></i></div></div>
+                   </div>
+                   <div class="col-lg-6 vertCenter">
+                       <p>It's often the case in art supply resale that you have to meet your vendors in person or go to a brick-and-mortar location to do business. Not so with ArtMart: Shipping is quick, affordable and easy so you can get your hands on any item anywhere.</p>
+                   </div>
+                </div>
+                <!--END ROW -->
+            </div>
+        </section>
+
+        <!-- Testimonials-->
+        <section class="page-section" id="testim">
+            <div class="container">
+                <!--HEADING -->
+                <div class="text-center">
+                    <div class="heading-div" class="text-center">
+                        <h2 class="section-heading text-uppercase">Testimonials</h2>
+                        <div class="inside-heading-div">
+                            <img src="assets/img/paintstroke.png">
+                        </div>
+                        <h3 class="section-subheading text-muted">Hear from our happy customers.</h3>
+                    </div>   
+                </div>
+                <!--END HEADING --> 
+                <div class="make-space"></div>
+                <!--START ROW -->
+                <div id="testim2Small" class="row justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                                <h4>Parveen Anand</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 vertCenter">
+                        <div class="row justify-content-center">
+                            <img class="stars" src="assets/img/5stars.png">
+                            <p class="text-muted">Buying and selling is so easy. Shipping is fast. Quality products. If I had ArtMart when I was in college, I'd probably still be in debt, but not as much as I'm in now.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="testim2" class="row justify-content-center">
+                    <div class="col-lg-4 vertCenter">
+                        <div class="row justify-content-center">
+                            <img class="stars" src="assets/img/5stars.png">
+                            <p class="text-muted">Buying and selling is so easy. Shipping is fast. Quality products. If I had ArtMart when I was in college, I'd probably still be in debt, but not as much as I'm in now.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                                <h4>Parveen Anand</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--END ROW -->
+                <!--START ROW -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="assets/img/goil.jpg" alt="..." />
+                                <h4>Peppermint Patty</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 vertCenter">
+                        <div class="row justify-content-center">
+                            <img class="stars" src="assets/img/5stars.png">
+                            <p class="text-muted">You can find so much on ArtMart that you can't find in lame old brick-and-mortar stores! I bought a set of haunted tortillions, and I was possessed by the ghost of Picasso. Now my art ROCKS! </p>
+                        </div>
+                    </div>
+                </div>
+                <!--END ROW -->
+                <!--START ROW -->
+                <div id="testim2Small" class="row justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="assets/img/guy.jpg" alt="..." />
+                                <h4>Tom Hanks</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 vertCenter">
+                        <div class="row justify-content-center">
+                            <img class="stars" src="assets/img/5stars.png">
+                            <p class="text-muted">I'm a muralist by trade, but I moonlight as a birthday clown to make ends meet. With the money I saved using ArtMart, I was able to quit. Now I can be the clown I was always meant to be.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="testim2" class="row justify-content-center">
+                    <div class="col-lg-4 vertCenter">
+                        <div class="row justify-content-center">
+                            <img class="stars" src="assets/img/5stars.png">
+                            <p class="text-muted">I'm a muralist by trade, but I moonlight as a birthday clown to make ends meet. With the money I saved using ArtMart, I was able to quit. Now I can be the clown I was always meant to be.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="assets/img/guy.jpg" alt="..." />
+                                <h4>Tom Hanks</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--END ROW -->
+        </section>
+
+        <!-- ABOUT-->
+        <section class="page-section bg-light" id="about">
+            <div class="container">
+                <!--HEADING -->
+                <div class="text-center">
+                    <div class="heading-div" class="text-center">
+                        <h2 class="section-heading text-uppercase">About</h2>
+                        <div class="inside-heading-div">
+                            <img src="assets/img/paintstroke.png">
+                        </div>
+                        <h3 class="section-subheading text-muted">Who did this, and why?</h3>
+                    </div>
+                </div>
+                <!--END HEADING -->
+                <div class="make-space"></div>
+                <div class="row  justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/bag.jpg" alt="..." />
+                            <h4>Jadon Johnson</h4>
+                            <br>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/JadonCTX" target="_" aria-label="Jadon Johnson Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="mailto: jej100@txstate.edu" aria-label="Jadon Johnson Email"><i class="fas fa-envelope"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/jadon-johnson-813158216/" target="_" aria-label="Jadon Johnson LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 left vertCenter"><p id="aboutP" class="large text-muted">Jadon Johnson is a dubious little creature pursuing a degree in Digital Media Innovation at Texas State University. This is not a real app, nor is it owned by a real company; this site was made for educational purposes only.</p></div>
+                </div>
+        </div>
+        </section>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
